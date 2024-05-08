@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <nav>
-      <div className="relative flex gap-4 justify-between items-center mb-2">
+      <div className="relative flex gap-4 justify-between items-center mb-2 px-2">
         <Link to="/" className="flex gap-2">
           <img src="/logo.svg" className="w-8" alt="Logo" />
           <h1 className="text-5xl font-bold tracking-tight cursor-pointer">
@@ -51,7 +51,7 @@ const Header = () => {
             />
           </button>
           {favorites.length > 0 && (
-            <div className="h-9 bg-gray-700 pt-1.5 px-6 cursor-pointer rounded">
+            <div className="h-14 sm:h-9 bg-gray-700 py-1.5 px-6 cursor-pointer rounded">
               <Link to="/favorites">Favorite GIFs</Link>
             </div>
           )}
