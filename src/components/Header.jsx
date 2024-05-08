@@ -58,7 +58,7 @@ const Header = () => {
           <button onClick={() => setShowCategories(!showCategories)}>
             <HiMiniBars3BottomRight
               className={`text-sky-400 block lg:hidden ${
-                showCategories ? "gradient" : ""
+                showCategories ? "gradient text-white" : ""
               }`}
               size={30}
             />
