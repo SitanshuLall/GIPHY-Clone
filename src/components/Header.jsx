@@ -55,9 +55,11 @@ const Header = () => {
               <Link to="/favorites">Favorite GIFs</Link>
             </div>
           )}
-          <button>
+          <button onClick={() => setShowCategories(!showCategories)}>
             <HiMiniBars3BottomRight
-              className="text-sky-400 block lg:hidden"
+              className={`text-sky-400 block lg:hidden ${
+                showCategories ? "gradient" : ""
+              }`}
               size={30}
             />
           </button>
